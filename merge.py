@@ -88,7 +88,11 @@ while lineno < len(LineList):
 		if ("-->" in LineList[lineno+1]) and (":" in LineList[lineno+1]) and ("," in LineList[lineno+1]):
 			SubtitleList = SubtitleList + [NewBlock]
 			NewBlock = [LineList[lineno]]
-	except ValueError:
+		else:
+			NewBlock.append(LineList[lineno])
+	except ValueError: #If int() fails, it's treated as a normal line.
+		NewBlock.append(LineList[lineno])
+	except IndexError: #Triggered if the last line is a number in an English line.
 		NewBlock.append(LineList[lineno])
 	if lineno == len(LineList) - 1:
 		SubtitleList = SubtitleList + [NewBlock] #To save the final block into SubtitleList
@@ -125,8 +129,3 @@ print "Writing to",OutputFileName,"."
 for item in OutputBlockList:
 	outfile.write(item.encode('utf-8'))
 outfile.close()
-
-
-
-
-
