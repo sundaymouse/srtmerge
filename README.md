@@ -3,7 +3,7 @@ srtmerge
 
 Merge and clean up multi-line and multi-language subtitle files.
 
-<b>Purpose</b>
+<br><b>Purpose</b>
 
 Some closed caption subtitle files contain multiple lines of subtitle in a single subtitle timing block.
 
