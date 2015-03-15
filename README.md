@@ -15,16 +15,17 @@ We use Chinese as the intended translated language. This script may not apply to
 <h5>To merge a subtitle file containing multiple lines of English and/or translated lines:</h5>
 <pre>
 python merge.py /path/to/original/subtitle.srt /path/to/output/subtitle.srt
-</pre><br>
+</pre>
 <h5>To split a subtitle file containing multiple lines of English and/or translated lines, into two separate subtitle files -- one for English, and one for translated:</h5>
 <pre>
 python split.py /path/to/original/subtitle.srt /path/to/output/subtitle
-</pre><br>
-Note that <b>/path/to/output/subtitle.en.srt</b> and <b>/path/to/output/subtitle.ch.srt</b>will be created.<br><br>
+</pre>
+Note that <b>/path/to/output/subtitle.en.srt</b> and <b>/path/to/output/subtitle.ch.srt</b> will be created.<br><br>
 
 <b>用途</b>
 
-将带有多行英文的SRT字幕合并成单行。如果同时有中文翻译行，中文翻译单独合并成单行，并置于对应的英文行上方。
+<pre>merge.py</pre> 将带有多行英文的SRT字幕合并成单行。如果同时有中文翻译行，中文翻译单独合并成单行，并置于对应的英文行上方。
+<pre>split.py</pre> 将带有多行英文的SRT字幕合并成单行。如果同时有中文翻译行，中文翻译单独合并成单行放进一个文件，英文行放在另外一个文件里。
 
 用法如上方。</b><br><br>
 
