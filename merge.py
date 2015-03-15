@@ -31,7 +31,7 @@
 import sys
 import os
 
-EnglishLineCharset = list("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,''""?!:;-—()$ ") 
+EnglishLineCharset = list("‘’äößáíñóú¿¡ùûüÿàâæçéèêëïîôœABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,''""?!:;-—()$ ".decode('utf-8')) 
 #If a character or symbol is not in this charset, they will be moved to a seperated translated line. Change the charset if you wish.
 
 InputFileName = sys.argv[1]
@@ -60,7 +60,7 @@ while True:
 	if len(CurrentLine) == 0:
 		break
 	else:
-		LineList.append(CurrentLine.rstrip().decode('utf-8-sig'))
+		LineList.append(CurrentLine.rstrip().decode('utf-8'))
 srtfile.close()
 
 try:
