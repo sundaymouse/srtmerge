@@ -24,7 +24,7 @@ Note that <b>/path/to/output/subtitle.en.srt</b> and <b>/path/to/output/subtitle
 
 <b>用途</b>
 
-<b>merge.py</b> 将带有多行英文的SRT字幕合并成单行。如果同时有中文翻译行，中文翻译单独合并成单行，并置于对应的英文行上方。
+<b>merge.py</b> 将带有多行英文的SRT字幕合并成单行。如果同时有中文翻译行，中文翻译单独合并成单行，并置于对应的英文行上方。<br>
 <b>split.py</b> 将带有多行英文的SRT字幕合并成单行。如果同时有中文翻译行，中文翻译单独合并成单行放进一个文件，英文行放在另外一个文件里。<br>
 
 用法如上方。</b><br><br>
