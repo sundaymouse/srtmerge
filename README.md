@@ -12,11 +12,11 @@ This script merges multiple lines into a single line. If Non-English translation
 We use Chinese as the intended translated language. This script may not apply to some languages with the same charset to English.<br><br>
 
 <b>Usage</b>
-<h3>To merge a subtitle file containing multiple lines of English and/or translated lines:</h3>
+<h5>To merge a subtitle file containing multiple lines of English and/or translated lines:</h5>
 <pre>
 python merge.py /path/to/original/subtitle.srt /path/to/output/subtitle.srt
-</pre><br><br>
-<h3>To split a subtitle file containing multiple lines of English and/or translated lines, into two separate subtitle files -- one for English, and one for translated:</h3>
+</pre><br>
+<h5>To split a subtitle file containing multiple lines of English and/or translated lines, into two separate subtitle files -- one for English, and one for translated:</h5>
 <pre>
 python split.py /path/to/original/subtitle.srt /path/to/output/subtitle
 </pre><br>
