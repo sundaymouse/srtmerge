@@ -17,7 +17,7 @@
 import sys
 import os
 
-EnglishLineCharset = list("“”…‘’äößáíñóú¿¡ùûüÿàâæçéèêëïîôœABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,''""?!:;-—-()$ ".decode('utf-8'))
+EnglishLineCharset = list("\"/@%“”…‘’äößáíñóú¿¡ùûüÿàâæçéèêëïîôœABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,''""?!:;-—-()$ ".decode('utf-8'))
 #If a character or symbol is not in this charset, they will be moved to a seperated translated line. Change the charset if you wish.
 
 InputFileName = sys.argv[1]
